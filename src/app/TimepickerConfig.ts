@@ -4,8 +4,8 @@ import { TimepickerConfig } from "ngx-bootstrap/timepicker";
 
 export function getTimepickerConfig(): TimepickerConfig {
   return Object.assign(new TimepickerConfig(), {
-    hourStep: 2,
-    minuteStep: 5,
+    hourStep: 1,
+    minuteStep: 1,
     showMeridian: false,
     readonlyInput: false,
     mousewheel: true,

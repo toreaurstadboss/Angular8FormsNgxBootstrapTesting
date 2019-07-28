@@ -26,6 +26,8 @@ export class UserSettingsFormComponent implements OnInit {
   userSettings: IUserSettings = { ...this.originalUserSettings };
   postError: boolean;
   startDate: Date;
+  userRating: number;
+  maxRating: number;
   startTime: Date;
   postErrorMessage: any;
   subscriptionTypes: Observable<string[]>;
@@ -37,6 +39,8 @@ export class UserSettingsFormComponent implements OnInit {
     this.subscriptionTypes = this.dataService.getSubscriptionTypes();
     this.startDate = new Date();
     this.startTime = new Date();
+    this.maxRating = 3;
+    this.userRating = 1;
     setInterval(this.updateTimePickerContinuously, 1000);
   }
 

@@ -68,6 +68,28 @@
 
     Start Time: {{ startTime }}
 
+    <div class="form-group">
+      <label>User Rating</label>
+      <rating
+        [(ngModel)]="userRating"
+        [max]="maxRating"
+        [readonly]="false"
+        name="userRating"
+        id="userRating"
+        [titles]="['one', 'two', 'three']"></rating>
+
+        <br />
+
+      <!-- <rating
+        [titles]="['one', 'two', 'three']"
+        [(ngModel)]="userRating"
+        name="userRating"
+        id="userRating"
+        [max]="maxRating"
+        [readonly]="false"
+      ></rating> -->
+    </div>
+
     <div class="form-check form-group">
       <input
         class="form-check-input"

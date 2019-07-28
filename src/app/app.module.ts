@@ -13,6 +13,7 @@ import { defineLocale } from "ngx-bootstrap/chronos";
 import { nbLocale } from "ngx-bootstrap/locale";
 import { TimepickerModule, TimepickerConfig } from 'ngx-bootstrap/timepicker';
 import { getTimepickerConfig  } from './TimepickerConfig';
+import { RatingModule } from 'ngx-bootstrap/rating';
 
 defineLocale("nb", nbLocale);
 
@@ -25,7 +26,8 @@ defineLocale("nb", nbLocale);
     ButtonsModule.forRoot(),
     BsDatepickerModule.forRoot(),
     BrowserAnimationsModule,
-    TimepickerModule.forRoot()
+    TimepickerModule.forRoot(),
+    RatingModule.forRoot()
   ],
   providers: [ BsLocaleService,
    { provide: TimepickerConfig, useFactory: getTimepickerConfig }
