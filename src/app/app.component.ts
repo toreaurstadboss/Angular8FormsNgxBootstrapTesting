@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ps-demo';
+  title = 'Angular Forms Angular 7 course on Plural Sight funtime';
 }

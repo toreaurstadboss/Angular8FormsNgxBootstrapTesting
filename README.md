@@ -1,4 +1,6 @@
-# PsDemo
+# Angular8FormsNgxBootstrapTesting
+
+This sample projects tests out Ngx-bootstrap for Angular 8 and looks into for example date pickers and time pickers from ngx-bootstrap.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
 
